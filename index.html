@@ -4,6 +4,17 @@
   </head>
 
   <body>
-    <script src=""></script> <!--JAVASCRIPT GOES HERE -->
+    <script src="lib/util.js"></script>
+    <script src="lib/movingObject.js"></script>
+    <script src="lib/asteroid.js"></script>
+    <script src="lib/game.js"></script>
+    <script src="lib/gameView.js"></script>
+
+    <canvas id="game-canvas" width=500 height=500> </canvas>
+    <script>
+      var canvasEl = document.getElementById("game-canvas")
+      new Asteroids.GameView(canvasEl).start();
+    </script>
+
   </body>
 </html>

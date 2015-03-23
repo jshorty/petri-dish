@@ -17,14 +17,21 @@
 
     <div>
       <img src="sprites/background.jpg">
-
       <canvas id="game-canvas" width=900 height=500> </canvas>
-    </div>  
+    </div>
 
     <script>
       var canvasEl = document.getElementById("game-canvas")
       new Asteroids.GameView(canvasEl).start();
+
+      function setVolume() {
+        var music = document.getElementById("music");
+        music.volume = 0.2;
+      }
+      window.onload=setVolume;
     </script>
 
+    <audio id="music" src="music.mp3" loop="true"
+      autoplay="true" volume="0.0">
   </body>
 </html>

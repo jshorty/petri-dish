@@ -6,4 +6,5 @@ Zen Petri dish borrows concepts from the Asteroids arcade game, but at a scale m
 ## Next Step Goals
 - [X] Realistic bullet speed/direction (use player movement vectors)
 - [X] Respawning enemies
-- [ ] Player has limited lives, Game Over screen displayed when finished - [ ] Switch to time-based scoring rather than by # enemies destroyed
+- [ ] Player has limited lives, Game Over screen displayed when finished
+- [ ] Switch to time-based scoring rather than by # enemies destroyed

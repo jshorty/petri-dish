@@ -15,14 +15,33 @@
     <script src="lib/bullet.js"></script>
     <script src="lib/ship.js"></script>
 
-    <div>
-      <img src="sprites/background.jpg">
+    <div class="game-window">
+      <img id="background" src="sprites/background.jpg">
+      <div id="welcome-window">
+        <h1>Zen Petri Dish</h1>
+        <p>
+          It's a simple life as a germ; for the most part,
+          one just <em>is</em>.
+          Still can't get too close to bigger things, though...
+        </p>
+        <p>
+          Use arrow keys to move, space to shoot.
+        </p>
+        <button id="start-button">Germ Out</button>
+      </div>
       <canvas id="game-canvas" width=900 height=500> </canvas>
+
+
     </div>
 
     <script>
-      var canvasEl = document.getElementById("game-canvas")
-      new Asteroids.GameView(canvasEl).start();
+      document.getElementById("start-button").addEventListener("click",
+        function () {
+          var canvasEl = document.getElementById("game-canvas")
+          new Asteroids.GameView(canvasEl).start();
+          document.getElementById("welcome-window").style.display="none";
+        }
+      );
 
       function setVolume() {
         var music = document.getElementById("music");

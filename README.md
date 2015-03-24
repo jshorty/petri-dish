@@ -8,3 +8,4 @@ Zen Petri dish borrows concepts from the Asteroids arcade game, but at a scale m
 - [X] Respawning enemies
 - [ ] Player has limited lives, Game Over screen displayed when finished
 - [ ] Switch to time-based scoring rather than by # enemies destroyed
+- [ ] Germs split into two smaller ones when shot (currently they just shrink or disappear)

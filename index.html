@@ -8,7 +8,7 @@
     <script src="vendor/keymaster.js"></script>
     <script src="lib/util.js"></script>
     <script src="lib/movingObject.js"></script>
-    <script src="lib/asteroid.js"></script>
+    <script src="lib/Germ.js"></script>
     <script src="lib/game.js"></script>
     <script src="lib/gameView.js"></script>
     <script src="lib/sprite.js"></script>
@@ -28,17 +28,19 @@
           Use arrow keys to move, space to shoot.
         </p>
         <button id="start-button">Germ Out</button>
+        <small>
+          Music from Evolution: The Game of Intelligent Life
+          <br> by Discovery Multimedia (1997)
+        </small>
       </div>
       <canvas id="game-canvas" width=900 height=500> </canvas>
-
-
     </div>
 
     <script>
       document.getElementById("start-button").addEventListener("click",
         function () {
           var canvasEl = document.getElementById("game-canvas")
-          new Asteroids.GameView(canvasEl).start();
+          new ZenPetriDish.GameView(canvasEl).start();
           document.getElementById("welcome-window").style.display="none";
         }
       );

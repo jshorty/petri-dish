@@ -14,29 +14,29 @@
   position: absolute;
   left: 200px;
   top: 100px;
-  background: #CCFF66;
-  opacity: 0.9;
   width: 460px;
   height: 260px;
-  padding: 20px;
-  text-align: center;
-  font-family: System, sans-serif;
-  color: #333;
   border: 3px solid #aaa;
   border-radius: 20px;
+  padding: 20px;
+  background: #CCFF66;
+  opacity: 0.9;
+  font-family: System, sans-serif;
+  color: #333;
+  text-align: center;
   transition: opacity 0.5s linear;
 }
 
 #start-button {
   display: block;
-  margin: 30px auto;
   width: 100px;
+  margin: 30px auto;
   border: 3px solid #aaa;
+  border-radius: 10px;
   background: #ccc;
   font-size: 16px;
-  transition: box-shadow 0.3s linear;
   cursor: pointer;
-  border-radius: 10px;
+  transition: box-shadow 0.3s linear;
 }
 
 button:hover {

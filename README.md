@@ -6,6 +6,10 @@
 ## About
 Zen Petri dish borrows concepts from the Asteroids arcade game, but at a scale many orders of magnitude smaller. The player floats (or fights) to survive while surrounded by his slightly larger, albeit microscopic neighbors.
 
+## Features
+- uses [Keymaster][keymaster] library
+[keymaster]: https://github.com/madrobby/keymaster
+
 ## Next Step Goals
 - [X] Realistic bullet speed/direction (use player movement vectors)
 - [X] Respawning enemies

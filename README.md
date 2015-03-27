@@ -11,7 +11,7 @@ Petri Dish borrows concepts from the Asteroids arcade game, but at a scale many 
 - Germs split up and speed up when hit by the player's bullets
 - Difficulty increases over time
 - Temporary immunity on player respawn
-- uses [Keymaster][keymaster] library
+- Uses [Keymaster][keymaster] library
 [keymaster]: https://github.com/madrobby/keymaster
 
 ## Next Step Goals

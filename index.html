@@ -1,6 +1,6 @@
 <!DOCTYPE html>
   <head>
-    <title>Zen Petri Dish</title>
+    <title>Petri Dish</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
   </head>
 
@@ -18,7 +18,7 @@
     <section class="game-window">
       <img id="background" src="sprites/background.jpg">
       <section id="welcome-window">
-        <h1>Zen Petri Dish</h1>
+        <h1>Petri Dish</h1>
         <p>
           It's a simple life as a germ; for the most part,
           one just <em>is</em>.
@@ -40,7 +40,7 @@
       document.getElementById("start-button").addEventListener("click",
         function () {
           var canvasEl = document.getElementById("game-canvas")
-          new ZenPetriDish.GameView(canvasEl).start();
+          new PetriDish.GameView(canvasEl).start();
           document.getElementById("welcome-window").style.display="none";
         }
       );

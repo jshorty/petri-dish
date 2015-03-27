@@ -45,14 +45,14 @@
         }
       );
 
-      function setVolume() {
+      function playMusic() {
         var music = document.getElementById("music");
         music.volume = 0.2;
+        music.play();
       }
-      window.onload=setVolume;
+      window.onload=playMusic;
     </script>
 
-    <audio id="music" src="music.mp3" loop="true"
-      autoplay="true" volume="0.0">
+    <audio id="music" src="music.mp3" loop="true" volume="0.0">
   </body>
 </html>

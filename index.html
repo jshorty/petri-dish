@@ -33,6 +33,12 @@
           <br> by Discovery Multimedia (1997)
         </small>
       </section>
+
+      <section id="game-over-window">
+        <h1>GAME OVER</h1>
+        <button id="replay-button">Germ Out</button>
+      </section>
+
       <canvas id="game-canvas" width=900 height=500> </canvas>
     </section>
 
@@ -41,15 +47,16 @@
         function () {
           var canvasEl = document.getElementById("game-canvas")
           new PetriDish.GameView(canvasEl).start();
-          document.getElementById("welcome-window").style.display="none";
+          document.getElementById("welcome-window").style.display = "none";
         }
       );
 
-      function playMusic() {
+      function playMusic () {
         var music = document.getElementById("music");
         music.volume = 0.2;
         music.play();
       }
+
       window.onload=playMusic;
     </script>
 

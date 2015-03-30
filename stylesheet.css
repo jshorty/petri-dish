@@ -10,7 +10,7 @@
   height: 500px;
 }
 
-#welcome-window {
+#welcome-window, #game-over-window {
   position: absolute;
   left: 200px;
   top: 100px;
@@ -27,7 +27,11 @@
   transition: opacity 0.5s linear;
 }
 
-#start-button {
+#game-over-window {
+  display: none;
+}
+
+button {
   display: block;
   width: 100px;
   margin: 30px auto;

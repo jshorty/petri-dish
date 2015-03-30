@@ -54,3 +54,7 @@ button {
 button:hover {
   box-shadow: -2px 2px 5px 0px #333;
 }
+
+#home-link {
+  width: 200px;
+}
